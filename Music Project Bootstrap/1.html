@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MusicSite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tracks">Tracks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#artists">Artists</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to MusicSite</h1>
+      <p class="lead">Discover and enjoy your favorite music.</p>
+    </div>
+  </div>
+
+ 
+  <div id="tracks" class="container mt-5">
+    <h2 class="text-center mb-4 ">Featured Tracks</h2>
+    <div class="row">
+     
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/despacito.jpg" class="card-img-top" alt="Track 1">
+          <div class="card-body">
+            <h5 class="card-title">Track 1</h5>
+            <audio controls class="audio-player" id="track1">
+              <source src="/music/despacito.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4 ">
+        <div class="card">
+          <img src="/photos/espresso.jpg" class="card-img-top" alt="Track 2">
+          <div class="card-body">
+            <h5 class="card-title">Track 2</h5>
+            <audio controls class="audio-player" id="track2">
+              <source src="/music/espresso.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/thewayiare.jpg" class="card-img-top" alt="Track 3">
+          <div class="card-body">
+            <h5 class="card-title">Track 3</h5>
+            <audio controls class="audio-player" id="track3">
+              <source src="/music/thewayiare.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/thenights.jpg" class="card-img-top" alt="Track 4">
+          <div class="card-body">
+            <h5 class="card-title">Track 4</h5>
+            <audio controls class="audio-player" id="track4">
+              <source src="/music/thenight.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/shapeofyou.jpg" class="card-img-top" alt="Track 5">
+          <div class="card-body">
+            <h5 class="card-title">Track 5</h5>
+            <audio controls class="audio-player" id="track5">
+              <source src="/music/shapeofyou.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/cradles.jpg" class="card-img-top" alt="Track 6">
+          <div class="card-body">
+            <h5 class="card-title">Track 6</h5>
+            <audio controls class="audio-player" id="track6">
+              <source src="/music/Cradles.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="artists" class="container mt-5">
+    <h2 class="text-center mb-4">Featured Artists</h2>
+    <div class="row">
+    
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/luisf.jpg" class="card-img-top" alt="Artist 1">
+          <div class="card-body">
+            <h5 class="card-title">Louis Fonsi</h5>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#artist1More"
+              aria-expanded="false" aria-controls="artist1More">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="artist1More">
+              <p class="card-text">Luis Fonsi has won multiple awards and has released numerous albums throughout his
+                career. He is recognized for his contribution to Latin music and has a significant following worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/sabrina carpenter.jpg" class="card-img-top" alt="Artist 2">
+          <div class="card-body">
+            <h5 class="card-title">Sabrina Carpenter</h5>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#artist2More"
+              aria-expanded="false" aria-controls="artist2More">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="artist2More">
+              <p class="card-text">Sabrina Annlynn Carpenter (born May 11, 1999) is an American singer and actress.
+                She made her acting debut with an appearance in the crime series Law & Order: Special Victims Unit,
+                and had a recurring role as the young version of Chloe Goodwin in The Goodwin Games.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/timbaland.jpg" class="card-img-top" alt="Artist 3">
+          <div class="card-body">
+            <h5 class="card-title">Timbaland</h5>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#artist3More"
+              aria-expanded="false" aria-controls="artist3More">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="artist3More">
+              <p class="card-text">Timothy Zachery Mosley, known professionally as Timbaland, is an American record
+                producer, rapper, and singer. Born and raised in Norfolk, Virginia, he has received widespread acclaim
+                for his innovative production work and distinctive "stuttering" rhythmic style. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/edsheeran.webp" class="card-img-top" alt="Artist 4">
+          <div class="card-body">
+            <h5 class="card-title">ED Sheeran</h5>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#artist4More"
+              aria-expanded="false" aria-controls="artist4More">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="artist4More">
+              <p class="card-text">Edward Christopher Sheeran MBE is an English singer-songwriter. Born in Halifax, West
+                Yorkshire, and raised in Framlingham, Suffolk, he began writing songs around the age of eleven. In early
+                2011, Sheeran independently released the extended play No. 5 Collaborations Project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/avicii.webp" class="card-img-top" alt="Artist 5">
+          <div class="card-body">
+            <h5 class="card-title">Avicii</h5>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#artist5More"
+              aria-expanded="false" aria-controls="artist5More">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="artist5More">
+              <p class="card-text">Tim Bergling, known professionally as Avicii, was a Swedish DJ, remixer, and record
+                producer. At age 16, he began posting his remixes on electronic music forums, which led to his first
+                record deal. He rose to prominence in 2011 with his single "Levels". </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/photos/Suburban.jpg" class="card-img-top" alt="Artist 6">
+          <div class="card-body">
+            <h5 class="card-title">Sub Urban</h5>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#artist6More"
+              aria-expanded="false" aria-controls="artist6More">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="artist6More">
+              <p class="card-text">twitter.com
+                Daniel Virgil Maisonneuve, known professionally as Sub Urban, is an American singer-songwriter who rose
+                to prominence with his hit single "Cradles".</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email address</label>
+            <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea class="form-control" id="contactMessage" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="text-center">
+    <div class="p-3">
+      © 2024 Your Website:
+      <a class="text-dark" href="https://yourwebsite.com/">yourwebsite.com</a>
+    </div>
+  </footer>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
